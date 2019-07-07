@@ -1,2 +1,3 @@
 # xournalpp-pipeline-dependencies
-Prebuilt dependencies for Pipelines
+
+This repository provides prebuilt dependecies of [Xournal++](https://github.com/xournalpp/xournalpp) for CI pipelines to shorten the build times.
