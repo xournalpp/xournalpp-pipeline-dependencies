@@ -38,10 +38,13 @@ cp ../inst.bak/bin/pkg-config bin/pkg-config
 
 # Copy GetText
 cp ../inst.bak/bin/gettext bin/gettext
+cp ../inst.bak/bin/gettext.sh bin/gettext.sh
 cp ../inst.bak/bin/xgettext bin/xgettext
 cp ../inst.bak/bin/msgmerge bin/msgmerge
 cp ../inst.bak/bin/msgfmt bin/msgfmt
 cp ../inst.bak/bin/msgcat bin/msgcat
+cp -r ../inst.bak/share/gettext share/gettext
+cp -r ../inst.bak/share/gettext-0.20.2 share/gettext-0.20.2
 
 # Copy Libraries
 # (do not do this for specific libraries to circumvent issues with new dependencies)
