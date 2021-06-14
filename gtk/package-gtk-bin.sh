@@ -27,8 +27,8 @@ cd inst
 # Copy CMake
 mkdir bin
 cp ../inst.bak/bin/cmake bin/cmake
-mkdir -p share/cmake-3.20
-cp -r ../inst.bak/share/cmake-3.20 share/
+mkdir -p share
+cp -r ../inst.bak/share/cmake-3.* share/
 
 # Copy CTest
 cp ../inst.bak/bin/ctest bin/ctest
