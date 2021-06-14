@@ -61,13 +61,13 @@ cp ../inst.bak/bin/gdk-pixbuf-query-loaders bin/
 cp ../inst.bak/bin/gtk-query-immodules-3.0 bin/
 
 # Remove old packaged data if it exists
-rm -f $CUR_DIR/gtk-bin.tar.gz
+rm -f $CUR_DIR/gtk-bin.tar.gz*
 
 # Package directory
 cd ..
 mkdir gtk
 mv inst gtk/
-tar -zcf $CUR_DIR/gtk-bin.tar.gz gtk
+tar -zcf - gtk | split -b 99m - $CUR_DIR/gtk-bin.tar.gz.
 
 # Undo copy operation so we have a running jhbuild environment again
 rm -rf gtk
