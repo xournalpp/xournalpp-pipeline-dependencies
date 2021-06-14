@@ -67,7 +67,7 @@ rm -f $CUR_DIR/gtk-bin.tar.gz*
 cd ..
 mkdir gtk
 mv inst gtk/
-tar -zcf - gtk | split -b 99m - $CUR_DIR/gtk-bin.tar.gz.
+tar --options gzip:compression-level=9 -czf - gtk | split -b 50m - $CUR_DIR/gtk-bin.tar.gz.
 
 # Undo copy operation so we have a running jhbuild environment again
 rm -rf gtk
