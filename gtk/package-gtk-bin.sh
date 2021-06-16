@@ -43,8 +43,7 @@ cp ../inst.bak/bin/xgettext bin/xgettext
 cp ../inst.bak/bin/msgmerge bin/msgmerge
 cp ../inst.bak/bin/msgfmt bin/msgfmt
 cp ../inst.bak/bin/msgcat bin/msgcat
-cp -r ../inst.bak/share/gettext share/gettext
-cp -r ../inst.bak/share/gettext-0.21 share/gettext-0.21
+cp -r ../inst.bak/share/gettext* share/
 
 # Copy Libraries
 # (do not do this for specific libraries to circumvent issues with new dependencies)
