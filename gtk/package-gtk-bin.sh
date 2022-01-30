@@ -27,8 +27,8 @@ cd inst
 # Copy CMake
 mkdir bin
 cp ../inst.bak/bin/cmake bin/cmake
-mkdir -p share/cmake-3.17
-cp -r ../inst.bak/share/cmake-3.17 share/
+mkdir -p share/cmake-3.20
+cp -r ../inst.bak/share/cmake-3.20 share/
 
 # Copy CTest
 cp ../inst.bak/bin/ctest bin/ctest
@@ -44,7 +44,7 @@ cp ../inst.bak/bin/msgmerge bin/msgmerge
 cp ../inst.bak/bin/msgfmt bin/msgfmt
 cp ../inst.bak/bin/msgcat bin/msgcat
 cp -r ../inst.bak/share/gettext share/gettext
-cp -r ../inst.bak/share/gettext-0.20.2 share/gettext-0.20.2
+cp -r ../inst.bak/share/gettext-0.21 share/gettext-0.21
 
 # Copy Libraries
 # (do not do this for specific libraries to circumvent issues with new dependencies)
@@ -63,7 +63,7 @@ cp ../inst.bak/bin/gtk-query-immodules-3.0 bin/
 # Remove old packaged data if it exists
 rm -f $CUR_DIR/gtk-bin.tar.gz
 
-# Package directroy
+# Package directory
 cd ..
 mkdir gtk
 mv inst gtk/
