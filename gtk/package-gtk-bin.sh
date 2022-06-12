@@ -49,6 +49,8 @@ cp -r ../inst.bak/share/gettext* share/
 # (do not do this for specific libraries to circumvent issues with new dependencies)
 cp -r ../inst.bak/lib .
 cp -r ../inst.bak/include .
+# Do not package python3. It takes a lot of space.
+rm -rf ./lib/python3.*/
 
 #Copy files required by bundler
 mkdir -p share/glib-2.0
