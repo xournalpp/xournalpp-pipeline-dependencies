@@ -58,6 +58,7 @@ cp -r ../inst.bak/share/glib-2.0/schemas share/glib-2.0/
 cp -r ../inst.bak/share/locale share
 cp -r ../inst.bak/share/themes share
 cp -r ../inst.bak/share/icons share
+cp -r ../inst.bak/share/gtksourceview-4 share
 cp ../inst.bak/bin/gdk-pixbuf-query-loaders bin/
 cp ../inst.bak/bin/gtk-query-immodules-3.0 bin/
 
