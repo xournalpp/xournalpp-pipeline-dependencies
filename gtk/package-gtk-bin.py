@@ -114,14 +114,12 @@ def main(argv: List[str]):
     for p in [
         Path("glib-2.0") / "schemas",
         "locale",
-        "themes",
         "icons",
-        "gtksourceview-4",
+        "gtksourceview-5",
         "lua",
     ]:
         copytree_to_stage(Path("share") / p)
     copy_to_stage(Path("bin") / "gdk-pixbuf-query-loaders")
-    copy_to_stage(Path("bin") / "gtk-query-immodules-3.0")
 
     subprocess.run(["find", stage_dir])
 
