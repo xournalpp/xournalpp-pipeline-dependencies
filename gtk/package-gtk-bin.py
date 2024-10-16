@@ -82,8 +82,8 @@ def main(argv: List[str]):
     # Copy CTest
     copy_to_stage(Path("bin") / "ctest")
 
-    # Copy gtk3-demo
-    copy_to_stage(Path("bin") / "gtk3-demo")
+    # Copy gtk4-demo
+    copy_to_stage(Path("bin") / "gtk4-demo")
 
     # Copy pkgconf
     copy_to_stage(Path("bin") / "pkgconf")
