@@ -34,7 +34,7 @@ cp -r ../inst.bak/share/cmake-3.20 share/
 cp ../inst.bak/bin/ctest bin/ctest
 
 # Copy Pkg-Config 
-cp ../inst.bak/bin/pkg-config bin/pkg-config
+cp ../inst.bak/bin/pkgconf bin/pkgconf
 
 # Copy GetText
 cp ../inst.bak/bin/gettext bin/gettext
