@@ -118,6 +118,7 @@ def main(argv: List[str]):
         "icons",
         "gtksourceview-4",
         "lua",
+        "poppler",
     ]:
         copytree_to_stage(Path("share") / p)
     copy_to_stage(Path("bin") / "gdk-pixbuf-query-loaders")
